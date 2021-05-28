@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <title>Travel in UA </title>
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Open+Sans:wght@300;400&family=Roboto:wght@400;700;900&display=swap" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700;900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@300;700;900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+        <link rel="stylesheet" href="assect/Css/style.css">
+    </head>
+    
+    <body>
+        <!--Sprite-->
+        <svg style="display: none">
+            <symbol id="logo__img" viewBox="0 0 612 612" >
+                <g>
+	<path d="M612,295.672c0,140.552-103.671,257.344-238.56,277.937c1.138-6.238,1.457-12.698,0.691-19.244
+		c0,0-0.806-6.888-1.86-15.903c47.891-8.159,91.129-30.134,125.4-61.737c-2.057-1.711-4.106-3.93-6.126-6.876
+		c-9.102-13.281,2.8-26.459,2.8-38.073c0-11.392-22.967-10.455-23.808-18c-2.902-26.13,16.035-26.486,26.131-36.582
+		s-9.979-33.049-22.946-31.568c-13.055,1.394-49.802-6.029-46.444-34.144c4.091-34.243-43.627-31.222-50.46-47.205
+		c-9.961-23.297,6.598-51.873,28.196-58.365c30.592-9.195,60.729-34.152,58.375-61.934c-2.667-31.465-16.909-59.842-40.366-76.699
+		c-24.41-9.889-50.731-16.004-78.269-17.547c-24.577,0.972-46.185,6.434-45.199,17.686c2.417,27.574,80.828,34.736,67.67,60.512
+		c-6.86,13.437-58.344,32.402-48.729,52.4c6.254,13.005,21.645,1.859,15.899,26.826c-2.644,11.488-12.717,33.073-28.208,34.466
+		c-15.841,1.479-29.032-40.487-72.15-41.863c-20.384-0.652-49.101,31.804-24.717,54.83c14.766,13.944,42.475-16.759,50.653,7.225
+		c5.763,16.901-0.776,52.405,26.121,67.243c9.805,5.409,24.836,10.124,39.702,17.678c-22.065,4.506-49.177,12.914-81.192,25.246
+		l-26.974-7.117c11.292-9.4,29.639-16.017,25.023-36.557c-6.781-30.177-59.178-18.796-95.301-54.918
+		c-11.082-11.08-34.719-47.873-34.622-92.077c-18.006,34.202-28.254,73.098-28.254,114.361c0,12.701,0.969,25.181,2.832,37.37
+		c-0.425-0.007-0.845-0.081-1.269-0.081c-11.376,0-22.533,2.39-32.873,6.909c-2.284-14.405-3.503-29.159-3.503-44.197
+		c0-155.035,126.133-281.172,281.167-281.172C485.867,14.5,612,140.637,612,295.672z M401.089,377.624l-68.67,31.565l1.065-14.963
+		l44.486-20.082c-6.345-0.454-12.919-0.627-19.483-0.627c-24.579,0-66.106,12.442-112.036,30.673L99.144,365.335
+		c-13.766-3.632-28.422-1.395-40.479,6.18l-7.243,4.55c-7.071,4.442-7.146,14.722-0.141,19.268l88.549,57.448
+		c-21.153,10.818-41.222,21.805-58.914,32.298l-45.438-24.056c-7.422-3.929-16.197-4.395-23.992-1.273l-4.301,1.724
+		c-6.414,2.567-9.101,10.195-5.711,16.216l25.031,44.472l0.011-0.004c-9.444,8.125-14.826,14.863-14.826,19.526
+		c0,13.956,17.174,17.444,32.312,17.444c27,0,383.567-81.641,383.567-155.605C427.567,388.875,417.549,381.549,401.089,377.624z
+		 M250.751,522.033l78.463-27.64c3.456-1.218,7.149,1.086,7.575,4.726l6.879,58.815c1.719,14.697-6.186,28.84-19.604,35.078
+		l-7.359,3.42c-4.596,2.136-10.048,0.991-13.397-2.812L248.36,531.2C245.685,528.16,246.931,523.379,250.751,522.033z"/>
+</g>
+            </symbol>
+            
+            <symbol id="attraction__icone" viewBox="0 0 512 512">
+                <g id="XMLID_1184_"><g id="XMLID_176_"><path id="XMLID_178_" d="m318.006 211.841c-16.814 0-33.145 3.261-48.537 9.69-5.096 2.129-7.501 7.986-5.373 13.082 2.129 5.097 7.986 7.499 13.082 5.373 12.938-5.405 26.674-8.145 40.828-8.145 58.449 0 106 47.552 106 106s-47.551 106-106 106-106-47.552-106-106c0-14.132 2.732-27.85 8.121-40.77 2.126-5.098-.283-10.953-5.38-13.079-5.094-2.123-10.953.283-13.079 5.38-6.411 15.373-9.662 31.68-9.662 48.469 0 69.477 56.523 126 126 126s126-56.523 126-126-56.523-126-126-126z"/><path id="XMLID_711_" d="m318.006 419.841c45.215 0 82-36.785 82-82s-36.785-82-82-82-82 36.785-82 82 36.786 82 82 82zm0-144c34.187 0 62 27.814 62 62s-27.813 62-62 62-62-27.813-62-62 27.813-62 62-62z"/><path id="XMLID_714_" d="m461.284 163.841h-30.42l-34.915-59.087c-1.799-3.045-5.073-4.913-8.609-4.913h-138.667c-3.537 0-6.81 1.868-8.609 4.913l-34.915 59.087h-57.149v-12c0-19.851-16.149-36-36-36s-36 16.149-36 36v12h-25.284c-27.965 0-50.716 22.751-50.716 50.717v246.566c0 27.966 22.751 50.717 50.716 50.717h410.567c27.965 0 50.716-22.751 50.716-50.717v-246.566c.001-27.966-22.751-50.717-50.715-50.717zm-206.905-44h127.254l26 44h-179.254zm-158.379 32c0-8.822 7.178-16 16-16s16 7.178 16 16v12h-32zm396 309.283c0 16.938-13.779 30.717-30.716 30.717h-410.568c-16.937 0-30.716-13.78-30.716-30.717v-246.566c0-16.938 13.779-30.717 30.716-30.717h410.567c16.937 0 30.716 13.779 30.716 30.717v246.566z"/><path id="XMLID_717_" d="m318.006 318.341c10.753 0 19.5 8.748 19.5 19.5 0 5.523 4.477 10 10 10s10-4.477 10-10c0-21.78-17.72-39.5-39.5-39.5-5.523 0-10 4.478-10 10s4.477 10 10 10z"/><path id="XMLID_718_" d="m318.006 73.532c5.523 0 10-4.478 10-10v-53.373c0-5.522-4.477-10-10-10s-10 4.477-10 10v53.373c0 5.523 4.477 10 10 10z"/><path id="XMLID_719_" d="m365.591 73.532c2.559 0 5.119-.977 7.071-2.929l36.691-36.691c3.905-3.905 3.905-10.237-.001-14.143-3.905-3.904-10.237-3.904-14.142 0l-36.69 36.692c-3.905 3.905-3.905 10.237 0 14.143 1.953 1.952 4.512 2.928 7.071 2.928z"/><path id="XMLID_720_" d="m263.35 70.604c1.953 1.952 4.512 2.929 7.071 2.929s5.119-.977 7.071-2.929c3.905-3.905 3.906-10.237.001-14.143l-36.691-36.691c-3.905-3.903-10.237-3.904-14.142 0-3.905 3.905-3.906 10.237-.001 14.143z"/><path id="XMLID_730_" d="m138 245.841h-52c-5.523 0-10 4.478-10 10 0 5.523 4.477 10 10 10h52c5.523 0 10-4.477 10-10s-4.477-10-10-10z"/><path id="XMLID_731_" d="m235.96 265.84c2.63 0 5.21-1.07 7.07-2.93s2.93-4.431 2.93-7.07c0-2.63-1.07-5.21-2.93-7.07-1.86-1.859-4.44-2.93-7.07-2.93s-5.21 1.07-7.07 2.93c-1.87 1.86-2.93 4.441-2.93 7.07 0 2.63 1.06 5.21 2.93 7.07 1.86 1.86 4.43 2.93 7.07 2.93z"/></g></g>
+            </symbol>
+            
+            <symbol id="accomodation__icone" viewBox="0 0 512 512">
+                <g>
+			<path d="M411.423,424.907h-56.388c-3.721,0-6.737,3.016-6.737,6.737s3.016,6.737,6.737,6.737h56.388
+				c3.721,0,6.737-3.016,6.737-6.737S415.144,424.907,411.423,424.907z"/>
+			<path d="M355.035,413.321h37.592c3.721,0,6.737-3.016,6.737-6.737s-3.016-6.737-6.737-6.737h-37.592
+				c-3.721,0-6.737,3.016-6.737,6.737S351.314,413.321,355.035,413.321z"/>
+			<path d="M411.423,374.782h-56.388c-3.721,0-6.737,3.016-6.737,6.737s3.016,6.737,6.737,6.737h56.388
+				c3.721,0,6.737-3.016,6.737-6.737S415.144,374.782,411.423,374.782z"/>
+			<path d="M490.318,299.828c0.05-11.705-3.64-23.119-10.533-32.579l-7.66-10.359c37.722-35.214,50.051-89.926,31.078-137.915
+				c-18.972-47.99-65.38-79.48-116.984-79.38c-45.845-0.138-88.086,24.838-110.058,65.074c-32.344-3.512-64.983,3.044-93.461,18.774
+				c-21.627,12.984-33.533,30.194-33.707,48.521c-0.001,0.053-0.03,0.097-0.03,0.15v0.258c0,0.104-0.024,0.206-0.023,0.311
+				c0.001,0.091,0.022,0.18,0.023,0.271v26.2l-17.859,10.716c-1.303,0.784-2.304,1.984-2.839,3.408l-4.385,11.661l-27.553,0.658
+				c-3.552,0.084-6.428,2.913-6.569,6.464l-0.549,13.711l-31.132,0.74c-3.552,0.084-6.428,2.913-6.569,6.464l-0.635,15.813
+				l-33.359,0.849c-1.163,0.032-2.298,0.362-3.296,0.961L3.268,277.17c-2.077,1.246-3.325,3.512-3.266,5.934l0.822,34.487v27.882
+				l-0.016,0.072c-0.001,0.034,0.017,0.063,0.016,0.097v0.12c0.033,0.221,0.077,0.441,0.133,0.657
+				c0.036,0.646,0.165,1.284,0.382,1.894c0.147,0.275,0.313,0.539,0.498,0.789c0.247,0.482,0.551,0.933,0.905,1.343
+				c0.305,0.264,0.634,0.5,0.981,0.705c0.345,0.288,0.718,0.539,1.114,0.751c0.488,0.175,0.994,0.293,1.509,0.352
+				c0.324,0.104,0.657,0.181,0.993,0.232l0.182,0.005l0.038,0.008l0.028-0.006l58.521,1.749h0.077l0.098,0.02
+				c0.086,0,0.158-0.046,0.243-0.049c0.698-0.029,1.387-0.168,2.041-0.412c0.222-0.081,0.44-0.174,0.652-0.28
+				c0.183-0.088,0.382-0.134,0.557-0.239l155.308-93.187c7.475,1.045,15.013,1.578,22.561,1.595
+				c16.851,0.008,33.608-2.512,49.711-7.476c7.398,7.453,15.723,13.926,24.77,19.259c-4.374,8.096-6.669,17.152-6.678,26.355v147.23
+				c-0.548,13.396,9.824,24.721,23.217,25.349h128.441c13.391-0.631,23.759-11.955,23.211-25.349V299.828z M275.752,145.206
+				c1.894-10.592,5.339-20.847,10.224-30.434c20.483-40.669,63.501-64.938,108.901-61.438c45.401,3.499,84.191,34.074,98.2,77.402
+				c14.008,43.327,0.46,90.824-34.299,120.241l0,0c-12.111,10.355-26.314,17.974-41.638,22.339
+				c-7.811,2.251-15.849,3.626-23.965,4.098c-2.465-3.351-2.988-7.75-1.377-11.585c54.431-3.029,96.56-48.836,95.033-103.33
+				s-46.156-97.87-100.672-97.845c-35.434,0.127-68.227,18.76-86.474,49.135c-6.031,10.027-10.237,21.044-12.421,32.54
+				c-0.913,4.828-1.453,9.718-1.618,14.629c-3.687,1.515-7.646,2.258-11.632,2.183C274.087,157.123,274.668,151.124,275.752,145.206
+				z M328.653,120.081L328.653,120.081c-4.101-2.334-8.362-4.375-12.752-6.107c19.154-26.301,51.371-39.733,83.536-34.826
+				c32.165,4.907,58.912,27.333,69.353,58.149s2.834,64.882-19.724,88.33l-18.776-25.421c-6.317-8.887-16.505-14.216-27.408-14.336
+				h-0.007c-10.903,0.124-21.088,5.456-27.401,14.345l-30.887,41.834c-3.45-1.888-6.766-4.01-9.926-6.352
+				c14.048-9.412,23.043-24.711,24.436-41.563l0.008-0.04v-27.908l0.013-0.115C359.653,148.104,348.831,131.768,328.653,120.081z
+				 M59.548,340.56l-45.25-1.352v-14.691l45.25,1.359V340.56z M64.512,312.538l-50.368-1.507l-0.579-24.329l6.066-3.638
+				l37.895-0.967c3.549-0.092,6.417-2.92,6.559-6.467l0.635-15.799l31.132-0.74c3.552-0.084,6.428-2.913,6.569-6.464l0.549-13.711
+				l25.78-0.615c2.747-0.065,5.179-1.792,6.145-4.365l5.158-13.72l24.207-14.526c4.569,4.448,9.675,8.308,15.201,11.49
+				c0.491,0.285,1.03,0.527,1.528,0.806L52.877,294.854c-3.19,1.915-4.224,6.053-2.309,9.243s6.053,4.224,9.243,2.309
+				l136.026-81.618c3.137,1.164,6.384,2.194,9.706,3.13L64.512,312.538z M216.834,249.332L73.022,335.619v-12.47l143.813-86.291
+				V249.332z M186.229,205.532L186.229,205.532c-15.163-8.798-23.588-20.403-23.793-32.7v-0.523
+				c0.033-13.354,9.917-26.936,27.194-37.31c24.512-13.389,52.371-19.409,80.224-17.336c-2.784,6.817-4.952,13.871-6.477,21.075
+				c-2.307,0.756-4.531,1.744-6.638,2.948c-5.997,3.067-9.907,9.096-10.26,15.822c0.326,6.279,3.987,11.905,9.595,14.747
+				c3.033,1.733,6.343,2.928,9.783,3.533c2.868,0.59,5.789,0.886,8.717,0.882c7.178,0.085,14.251-1.732,20.5-5.266l0.678-0.444
+				c5.515-2.967,9.142-8.536,9.625-14.78c0.09-3.99-1.364-7.861-4.059-10.805c1.599-6.865,4.043-13.505,7.275-19.77
+				c4.592,1.671,9.037,3.719,13.291,6.124c15.61,9.041,24.024,21.004,23.756,34.141l-0.006,0.03v0.379
+				c-0.565,13.04-10.174,25.814-27.066,35.963c-4.587,2.722-9.365,5.11-14.296,7.145c-7.499,3.047-15.247,5.441-23.158,7.158
+				c-0.125,0.016-0.25,0.039-0.368,0.066C246.696,223.894,210.482,219.653,186.229,205.532z M260.883,155.519
+				c-0.086,1.124-0.096,2.282-0.153,3.42c-0.427-0.401-0.701-0.938-0.777-1.519C260.044,156.701,260.371,156.032,260.883,155.519z
+				 M297.055,240.265c-21.482,7.128-44.259,9.489-66.747,6.919v-14.559c5.778,0.613,11.584,0.924,17.395,0.933
+				c11.933,0.002,23.833-1.237,35.51-3.697c0.151-0.02,0.296-0.049,0.441-0.079c8.796-1.891,17.409-4.546,25.743-7.934
+				c5.545-2.287,10.916-4.973,16.072-8.036c7.316-4.283,13.962-9.619,19.725-15.837c-1.953,11.464-10.803,22.586-25.791,31.929
+				c-0.217,0.161-0.414,0.273-0.842,0.539C311.755,234.459,304.547,237.751,297.055,240.265z M311.357,249.067L311.357,249.067
+				c3.858-1.672,7.631-3.565,11.334-5.631c4.334,3.563,8.959,6.756,13.828,9.544l-6.86,9.291
+				C323.116,258.518,316.983,254.092,311.357,249.067z M467.108,458.933H338.667c-5.937-0.65-10.265-5.926-9.743-11.875v-147.23
+				c-0.04-8.896,2.768-17.571,8.013-24.757l49.375-66.845c3.689-5.547,9.909-8.88,16.571-8.882s12.882,3.33,16.574,8.875
+				l19.515,26.424c-7.341,5.653-15.552,10.074-24.312,13.092c-9.887-5.099-21.933-3.26-29.848,4.557
+				c-0.924,0.926-1.765,1.932-2.513,3.007c-7.5,10.117-6.418,24.21,2.54,33.063c0.341,0.353,0.701,0.686,1.079,1
+				c4.641,4.175,10.665,6.482,16.908,6.474c6.844-0.005,13.404-2.74,18.224-7.599c0.855-0.899,1.65-1.853,2.38-2.856
+				c13.854-4.295,26.846-10.989,38.386-19.778l7.148,9.666c5.174,7.139,7.935,15.742,7.881,24.559h0v147.23
+				C477.366,453.005,473.041,458.279,467.108,458.933z"/>
+		</g>
+            </symbol>
+            
+            <symbol id="food__icone"  viewBox="0 0 480 480">
+                <g>
+	<g>
+		<path d="M339.904,161.776l-5.136-16.904c-6.524-19.202-27.379-29.479-46.581-22.955c-10.802,3.67-19.285,12.153-22.955,22.955
+			l-5.136,16.904c-4.322,14.256-5.229,29.329-2.648,44c2.354,12.352,10.196,22.964,21.312,28.84L273.008,363.2
+			c-0.77,7.177,1.558,14.342,6.4,19.696c10.413,11.39,28.089,12.182,39.479,1.769c0.616-0.563,1.206-1.153,1.769-1.769
+			c4.734-5.202,7.058-12.157,6.4-19.16L321.272,234.6c11.101-5.879,18.93-16.484,21.28-28.824
+			C345.133,191.105,344.226,176.032,339.904,161.776z M326.792,202.992c-1.732,8.874-8.056,16.155-16.6,19.112
+			c-3.243,1.219-5.332,4.387-5.176,7.848L311.096,365c0.28,2.649-0.594,5.29-2.4,7.248c-4.817,4.769-12.575,4.769-17.392,0
+			c-1.896-2.116-2.757-4.964-2.352-7.776l6.032-134.52c0.156-3.461-1.933-6.629-5.176-7.848c-8.544-2.957-14.868-10.238-16.6-19.112
+			c-2.14-12.18-1.386-24.693,2.2-36.528l5.136-16.912c3.974-10.745,15.906-16.234,26.652-12.26c5.681,2.101,10.159,6.58,12.26,12.26
+			l5.136,16.912C328.174,178.3,328.928,190.812,326.792,202.992z"/>
+	</g>
+</g>
+<g>
+	<g>
+		<path d="M216,120c-4.418,0-8,3.582-8,8v68.688l-21.656,21.656c-1.602,1.596-2.454,3.797-2.344,6.056l7,140
+			c0.167,3.019-0.929,5.972-3.024,8.152c-4.379,4.418-11.511,4.45-15.93,0.07c-0.024-0.023-0.047-0.047-0.07-0.07
+			c-2.096-2.18-3.191-5.133-3.024-8.152l7.048-140c0.112-2.258-0.737-4.458-2.336-6.056L152,196.688V128c0-4.418-3.582-8-8-8
+			s-8,3.582-8,8v72c0,2.122,0.844,4.156,2.344,5.656l21.488,21.496l-6.824,136.472c-0.726,14.907,10.77,27.581,25.677,28.307
+			c14.907,0.726,27.581-10.77,28.307-25.677c0.043-0.876,0.043-1.753,0-2.629l-6.824-136.472l21.488-21.496
+			c1.5-1.5,2.344-3.534,2.344-5.656v-72C224,123.582,220.418,120,216,120z"/>
+	</g>
+</g>
+<g>
+	<g>
+		<path d="M168,120c-4.418,0-8,3.582-8,8v64c0,4.418,3.582,8,8,8s8-3.582,8-8v-64C176,123.582,172.418,120,168,120z"/>
+	</g>
+</g>
+<g>
+	<g>
+		<path d="M192,120c-4.418,0-8,3.582-8,8v64c0,4.418,3.582,8,8,8s8-3.582,8-8v-64C200,123.582,196.418,120,192,120z"/>
+	</g>
+</g>
+<g>
+	<g>
+		<path d="M240,0C107.452,0,0,107.452,0,240s107.452,240,240,240s240-107.452,240-240C479.85,107.514,372.486,0.15,240,0z M240,464
+			C116.288,464,16,363.712,16,240S116.288,16,240,16s224,100.288,224,224C463.859,363.653,363.653,463.859,240,464z"/>
+	</g>
+</g>
+<g>
+	<g>
+		<path d="M265.969,390.172c-0.429-4.397-4.342-7.614-8.74-7.185c-0.103,0.01-0.206,0.022-0.309,0.036l0.032-0.008
+			c-11.263,1.308-22.641,1.308-33.904,0c-4.39-0.515-8.365,2.626-8.88,7.016c-0.515,4.39,2.626,8.365,7.016,8.88
+			c12.491,1.459,25.109,1.459,37.6,0C263.181,398.483,266.398,394.57,265.969,390.172z"/>
+	</g>
+</g>
+<g>
+	<g>
+		<path d="M362.4,136.912c-2.839-3.385-7.885-3.828-11.27-0.988c-0.011,0.009-0.022,0.019-0.034,0.028
+			c-3.377,2.848-3.807,7.894-0.96,11.272c48.235,57.26,44.545,141.929-8.488,194.776c-3.13,3.119-3.139,8.186-0.02,11.316
+			c3.119,3.13,8.186,3.139,11.316,0.02C411.881,294.623,415.991,200.541,362.4,136.912z"/>
+	</g>
+</g>
+<g>
+	<g>
+		<g>
+			<path d="M186.392,105.744c-0.005,0-0.01-0.001-0.015-0.001c-0.008,0-0.016,0.001-0.025,0.001H186.392z"/>
+			<path d="M277.736,84.472c-31.265-7.493-64.055-5.479-94.168,5.784c-4.136,1.555-6.227,6.169-4.672,10.304
+				c1.172,3.117,4.152,5.18,7.481,5.183c0.957-0.005,1.905-0.18,2.799-0.519c27.118-10.141,56.646-11.952,84.8-5.2
+				c4.295,1.038,8.618-1.601,9.656-5.896C284.67,89.833,282.031,85.51,277.736,84.472z"/>
+		</g>
+	</g>
+</g>
+<g>
+	<g>
+		<path d="M137.992,341.6C111.023,314.677,95.908,278.108,96,240c-0.079-30.446,9.565-60.122,27.528-84.704
+			c2.655-3.532,1.944-8.547-1.588-11.202s-8.547-1.944-11.202,1.588c-0.047,0.063-0.093,0.126-0.138,0.19
+			c-46.253,63.588-39.447,151.359,16.056,207.056c3.128,3.13,8.202,3.132,11.332,0.004C141.118,349.804,141.12,344.73,137.992,341.6
+			z"/>
+	</g>
+</g>
+            </symbol>
+            
+            <symbol id="quotes__icone" viewBox="0 0 508.044 508.044"><g>
+		<path d="M0.108,352.536c0,66.794,54.144,120.938,120.937,120.938c66.794,0,120.938-54.144,120.938-120.938
+			s-54.144-120.937-120.938-120.937c-13.727,0-26.867,2.393-39.168,6.61C109.093,82.118,230.814-18.543,117.979,64.303
+			C-7.138,156.17-0.026,348.84,0.114,352.371C0.114,352.426,0.108,352.475,0.108,352.536z"/>
+		<path d="M266.169,352.536c0,66.794,54.144,120.938,120.938,120.938s120.938-54.144,120.938-120.938S453.9,231.599,387.106,231.599
+			c-13.728,0-26.867,2.393-39.168,6.61C375.154,82.118,496.875-18.543,384.04,64.303C258.923,156.17,266.034,348.84,266.175,352.371
+			C266.175,352.426,266.169,352.475,266.169,352.536z"/>
+	</g></symbol>
+            
+            <symbol id="initerary__icone" viewBox="0 0 512.001 512.001" ><g>
+	<g>
+		<path d="M491.429,32.075l-144.924,57.97L169.696,31.756c-3.431-1.133-7.174-0.92-10.267,0.318l-150,60
+			C3.734,94.352,0,99.868,0,106.002v360c0,10.65,10.781,17.842,20.571,13.927l144.925-57.97l176.734,58.265
+			c0.82,0.275,0.753,0.218,1.34,0.381c1,0,4.196,1.266,9.063-0.7l149.939-59.976c5.694-2.278,9.429-7.793,9.429-13.927v-360
+			C512,35.408,501.28,28.137,491.429,32.075z M150,395.846l-120,48V116.157l120-48V395.846z M332.001,281.73
+			c-0.173-0.02-0.341-0.053-0.516-0.066c-8.233-0.639-16.179-2.561-23.614-5.714c-7.628-3.233-16.433,0.327-19.665,7.955
+			c-3.234,7.626,0.327,16.431,7.954,19.666c14.693,6.23,30.957,8.491,35.841,7.949v133.743L180,395.153V210.486
+			c4.153,0.095,8.299,0.513,12.348,1.289c8.147,1.56,15.998-3.782,17.555-11.909c1.559-8.136-3.773-15.996-11.909-17.555
+			c-5.904-1.131-11.949-1.747-17.993-1.845V66.741l152,50.11V281.73z M482,395.847l-120,48v-327.69l120-48V395.847z"/>
+	</g>
+</g>
+<g>
+	<g>
+		<path d="M84.487,287.541c-7.859-2.623-16.354,1.628-18.974,9.486l-4.744,14.23c-2.62,7.859,1.627,16.354,9.486,18.974
+			c7.85,2.618,16.352-1.62,18.974-9.486l4.744-14.23C96.594,298.656,92.346,290.161,84.487,287.541z"/>
+	</g>
+</g>
+<g>
+	<g>
+		<path d="M125.162,211.32c-6.008-5.705-15.501-5.46-21.206,0.547c-7.822,8.237-14.201,17.797-18.96,28.413
+			c-3.389,7.56-0.008,16.435,7.552,19.824c7.561,3.391,16.435,0.005,19.823-7.551c3.37-7.517,7.857-14.254,13.339-20.027
+			C131.415,226.519,131.169,217.024,125.162,211.32z"/>
+	</g>
+</g>
+<g>
+	<g>
+		<path d="M273.001,243.904c-2.466-4.631-6.522-15.231-16.807-27.529c-5.315-6.355-14.774-7.198-21.129-1.884
+			c-6.355,5.314-7.199,14.774-1.884,21.129c7.658,9.157,10.173,16.439,13.342,22.388c3.896,7.315,12.983,10.08,20.291,6.187
+			C274.126,260.3,276.896,251.216,273.001,243.904z"/>
+	</g>
+</g>
+<g>
+	<g>
+		<path d="M416.831,251.402c-6.562-5.062-15.979-3.848-21.04,2.71c-4.912,6.365-10.861,11.799-17.682,16.149
+			c-6.983,4.455-9.034,13.729-4.579,20.713c4.454,6.982,13.724,9.038,20.714,4.58c9.75-6.219,18.261-13.996,25.297-23.112
+			C424.603,265.884,423.389,256.464,416.831,251.402z"/>
+	</g>
+</g>
+<g>
+	<g>
+		<path d="M442.267,181.957c-7.759-2.911-16.403,1.021-19.312,8.778l-5.267,14.045c-3.67,9.786,3.577,20.271,14.043,20.271
+			c6.073,0,11.789-3.716,14.047-9.737l5.267-14.045C453.954,193.512,450.024,184.866,442.267,181.957z"/>
+	</g>
+</g></symbol>
+        </svg>
+        <!--Header-->
+        <header class="header" id="header">
+            <div class="container">
+                <div class="header__inner">
+                    
+                    <div class="header__logo">
+                       <a class="home__link" href="index.html"> 
+                          <svg class="logo__photo">
+                            <use xlink:href="#logo__img"></use>
+                          </svg>
+                          <h1 class="logo__text">Travel in UA</h1>
+                        </a>
+                    </div>
+                    
+                        <nav class="nav" id="nav">
+                            <a class="nav__link" href="assect/tag/romantictur.html">Romantic tourism</a>
+                            <a class="nav__link" href="assect/tag/extrimtur.html">Extreme tourism</a>
+                            <a class="nav__link" href="assect/tag/thesoultur.html">For the soul</a>
+                        </nav>
+                
+                    <button class="burger" type="button" id="navToggle">
+                           <span class="burger__item">Menu</span>
+                    </button>
+                    
+                </div>
+            </div>
+        </header>
+        
+        <!--Intro-->
+        <div class="intro" id="intro">
+                <div class="intro__inner">
+                    
+                    <div class="intro__slider" id="introSlider">
+                        <div class="slick-item">
+                           <img class="slider__photo" src="assect/Images/intro-slider/slider-1.jpg" alt="">
+                           <div class="slider__offer">
+                                <h2 class="offer__title">DISCOVER THE MOST ENGAGING PLACE</h2>
+                                <a class="btn btn-silver" data-scroll="#more" href="#">See our offer</a>
+                            </div>
+                        </div>
+                    
+                         <div class="slick-item">
+                           <img class="slider__photo" src="assect/Images/intro-slider/slider-2.jpg" alt="">
+                           <div class="slider__offer">
+                                <h2 class="offer__title">DISCOVER THE MOST ENGAGING PLACE</h2>
+                                <a class="btn btn-silver" data-scroll="#more" href="#">See our offer</a>
+                            </div>
+                        </div>
+                    
+                      <div class="slick-item">
+                           <img class="slider__photo" src="assect/Images/intro-slider/slider-3.jpg" alt="">
+                           <div class="slider__offer">
+                                <h2 class="offer__title">DISCOVER THE MOST ENGAGING PLACE</h2>
+                                <a class="btn btn-silver" data-scroll="#more" href="#">See our offer</a>
+                            </div>
+                        </div>
+                      
+                       <div class="slick-item">
+                             <img class="slider__photo" src="assect/Images/intro-slider/slider-4.jpg" alt="">
+                             <div class="slider__offer">
+                                <h2 class="offer__title">DISCOVER THE MOST ENGAGING PLACE</h2>
+                                <a class="btn btn-silver" data-scroll="#more" href="#">See our offer</a>
+                            </div>
+                        </div>
+                    
+                        <div class="slick-item">
+                           <img class="slider__photo" src="assect/Images/intro-slider/slider-5.png" alt="">
+                           <div class="slider__offer">
+                                <h2 class="offer__title">DISCOVER THE MOST ENGAGING PLACE</h2>
+                                <a class="btn btn-silver" data-scroll="#more" href="#">See our offer</a>
+                            </div>
+                        </div>
+                        
+                        <div class="slick-item">
+                           <img class="slider__photo" src="assect/Images/intro-slider/slider-6.jpeg" alt="">
+                           <div class="slider__offer">
+                                <h2 class="offer__title">DISCOVER THE MOST ENGAGING PLACE</h2>
+                                <a class="btn btn-silver" data-scroll="#more" href="#">See our offer</a>
+                            </div>
+                        </div>
+                        
+                        <div class="slick-item">
+                           <img class="slider__photo" src="assect/Images/intro-slider/slider-7.png" alt="">
+                           <div class="slider__offer">
+                                <h2 class="offer__title">DISCOVER THE MOST ENGAGING PLACE</h2>
+                                <a class="btn btn-silver" data-scroll="#more" href="#">See our offer</a>
+                            </div>
+                        </div>
+                        
+                        <div class="slick-item">
+                           <img class="slider__photo" src="assect/Images/intro-slider/slider-8.jpeg" alt="">
+                           <div class="slider__offer">
+                                <h2 class="offer__title">DISCOVER THE MOST ENGAGING PLACE</h2>
+                                <a class="btn btn-silver" data-scroll="#more" href="#">See our offer</a>
+                            </div>
+                        </div>
+                        
+                    </div> <!--/.intro__slider-->
+                </div> <!--/.intro__inner-->
+        </div> <!--/.intro-->
+        
+        <!--Journey-->
+        
+        <div class="journey" id="journey">
+            <div class="container">
+                <h2 class="journey__title">Find The Best Place</h2>
+                <div class="journey__inner">
+                    <p class="journey__text">Always want to visit interesting and unusual places, enjoying the color and originality of foreign landscapes. On the territory of Ukraine there are many places, visiting which, experienced travelers do not immediately mention that are not in Africa, Italy, the Netherlands, Germany or other no less interesting country. We have collected a selection of such places in today's article. So, let's go on our trip around the world!</p>
+                </div>
+            </div>
+        </div>
+        
+        <!--Attractions-->
+        <div class="attraction" id="more">
+            <div class="attractions__photo1">
+                <img class="attractions__image" src="assect/Images/attraction-1.jpg" alt="" >
+            </div>
+            <div class="join__article">
+                
+                <div class="article">
+                <svg class="icone">
+                    <use xlink:href="#attraction__icone"></use>
+                </svg> 
+               
+                   <h2 class="article__title">Attractions</h2>
+                    <div class="article__text">
+                        <p>Every corner of Ukraine is unique. The West is picturesque and cosy, the North and East are industrial and monumental, while the South is always charming and welcoming. Each region contains its own abundance of beautiful and historic tourists sites.</p>
+                    </div>
+                </div>
+            
+               <div class="attractions__photo2">
+                <img class="attractions__image" src="assect/Images/attractions-2.jpg" alt=""> 
+              </div>
+                
+            </div>
+        </div>
+        
+        <!--Accomodation-->
+        
+        <div class="accomodation">
+             <div class="join__article">
+                
+                <div class="article">
+                <svg class="icone inner-margin">
+                    <use xlink:href="#accomodation__icone"></use>
+                </svg> 
+               
+                   <h2 class="article__title inner-title">Accomodation</h2>
+                    <div class="article__text">
+                        <p>Ukraine is friendly to backpackers and you easily get lifts elsewhere in the country</p>
+                    </div>
+                </div>
+               <div class="accomodation__photo2">
+                <img class="accomodation__image" src="assect/Images/accommodation-2.jpg" alt=""> 
+              </div>
+            </div>
+                
+               <div class="accomodation__photo1">
+                <img class="accomodation__image" src="assect/Images/accommodation-1.jpg" alt="" >
+               </div>
+        </div>
+        
+         <!--Food-->
+        
+        <div class="food">
+            
+            <div class="food__photo1">
+                <img class="food__image" src="assect/Images/food-1.jpg" alt="" >
+            </div>
+            
+            <div class="join__article">
+                <div class="article">
+                <svg class="icone inner-margin">
+                    <use xlink:href="#food__icone"></use>
+                </svg> 
+               
+                   <h2 class="article__title inner-title">Food</h2>
+                    <div class="article__text">
+                        <p>The peculiar features of traditional Ukrainian food have been forming over centuries. The neighboring countries, climate conditions, rich soil and hard-working locals have influenced the complexity of the dishes. Ukrainian dishes are generously flavored (with garlic often the main seasoning) and, despite the contradictory tastes being used, come together in a harmonious blend.</p>
+                    </div>
+                </div>
+               <div class="food__photo2">
+                <img class="food__image transform" src="assect/Images/food-2.jpg" alt="" > 
+              </div>  
+            </div>
+            
+             <div class="food__photo3">
+                <img class="food__image" src="assect/Images/food-3.jpg" alt="" style="transform: translateX(-15%);" >
+            </div>
+            
+        </div>
+        
+        <!--Itinerary-->
+        <div class="ititerary">
+            <div class="container">
+                <div class="itinerary__inner">
+                    <svg class="icone ">
+                       <use xlink:href="#initerary__icone"></use>
+                    </svg> 
+                    <h2 class="itinerary__title">We help you planning your itinerary</h2>
+                    <div class="itinerary__text">
+                      <p>We will create the best route for your trip, taking into account all the wishes<br> and hobbies of the traveler. This trip will be unforgettable in your life!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!--Gallery-->
+        
+        <div class="gallery">
+            <!--<div class="gallery__inner">-->
+                
+                <div class="gallery__item">
+                    <img class="gallery__photo" src="assect/Images/Gallery/gallery-17.jpg" alt="">
+                    <div class="gallery__content">
+                        <h4 class="gallery__title">Kamenets-Podolsky</h4>
+                        <div class="gallery__text"><p>A city that can be told a lot, and the richness of its history can only be envied. But it is better to see once than to hear the wonderful cries of acquaintances. Kamenets-Podolsky is a vivid example of a medieval town, where there is an atmosphere of impregnability, strength and at the same time boundless romance. Every year, many festivals are held in large areas of the city, such as "Respublika". People from all over the country come to the street art festival, listen to their favorite artists, make new acquaintances and trample on shoes.</p>
+                        <p>.Address: Khmelnytsky region, Kamyanets-Podilsky city</p></div>
+                    </div>
+                </div>
+                
+                <div class="gallery__item">
+                    <img class="gallery__photo" src="assect/Images/Gallery/gallery-2.jpg" alt="">
+                    <div class="gallery__content">
+                        <h4 class="gallery__title">Ukrainian Dead Sea</h4>
+                        <div class="gallery__text"><p>Ukraine has its own Dead Sea, located near Kherson. There it is called Lemurian, because the water in this lake is colored pink. But the miracles do not end there, because this water is considered healing and rejuvenating. The most interesting thing is that in our Lemurian lake 5% more salt than in the Dead Sea!</p>
+                        <p>Address: Kherson region, Grigorivka village</p></div>
+                    </div>
+                </div>
+                
+                <div class="gallery__item">
+                    <img class="gallery__photo transform-none" src="assect/Images/Gallery/gallery-3.jpg" alt="">
+                    <div class="gallery__content">
+                        <h4 class="gallery__title">Skalat Castle</h4>
+                        <div class="gallery__text"><p>There are several theories surrounding its appearance. According to one of them, the residents of the city suffered from government harassment and constantly held protests. In response to government pressure, the rebellious people even burned down the city hall. The nobility was very concerned about the mood of the locals, so began construction of the fortress.Another version states that the castle was a dowry of Krzysztofor Wichrowski's daughter and passed into the possession of Jan Firlejow, a castellan.Skalat Castle is located by the river in the southwestern part of Skalat.</p>
+                            <p>Address: Ternopil region, Skalat city</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="gallery__item">
+                    <img class="gallery__photo" src="assect/Images/Gallery/gallery-11.jpg" alt="">
+                    <div class="gallery__content">
+                        <h4 class="gallery__title">Rafting on the Prut River</h4>
+                        <div class="gallery__text"><p>Prut is another of the most famous, extreme and interesting rivers in Ukraine. It is popular among rafters for the nature of the current, difficult rapids and a later season for rafting. The main rapids and passes are located in the area from Vorokhta to Yaremche. Rafting on the Prut River is held in the low water season, when not only experienced athletes but also beginners will be able to try their hand.</p>
+                        <p>Address: Ukrainian Carpathians</p></div>
+                    </div>
+                </div>
+                
+                <div class="gallery__item">
+                    <img class="gallery__photo" src="assect/Images/Gallery/gallery-14.jpg" alt="">
+                    <div class="gallery__content">
+                        <h4 class="gallery__title">"Round yard"</h4>
+                        <div class="gallery__text"><p>Initially, the "Round Yard" was planned as a defensive structure for protection against the Tatars. Large in size (over 60 meters in length and 40 meters in width), it is a small fortress with deaf high walls and four round towers around the perimeter. Now the "Round Yard" has been restored, various cultural events are held here. It is adjoined by a beautiful park with Golitsyn Palace (19th century), an arboretum, lakes and wooden sculptures.</p>
+                            <p>Address: Sumy region, the city of Trostyanets</p></div>
+                    </div>
+                </div>
+                
+                <div class="gallery__item">
+                    <img class="gallery__photo" src="assect/Images/Gallery/gallery-16.jpg" alt="">
+                    <div class="gallery__content">
+                        <h4 class="gallery__title">Kobleve</h4>
+                        <div class="gallery__text"><p>The hospitable coast of the Nikolaev area will please you with blue water, sandy beaches and interesting entertainments.</p>
+                            <p>.Address: Odessa region, Koblevo city</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="gallery__item">
+                    <img class="gallery__photo" src="assect/Images/Gallery/gallery-15.jpg" alt="">
+                    <div class="gallery__content">
+                        <h4 class="gallery__title">Sofiyivka Park </h4>
+                        <div class="gallery__text"><p>The famous park "Sofiyivka" in Uman - a masterpiece of garden and park art of world level, a sample of landscape composition of water, earth, architectural structures and sculptures.</p>
+                        <p>Address: Cherkasy region, Uman city</p></div>
+                    </div>
+                </div>
+                
+                <div class="gallery__item">
+                    <img class="gallery__photo" src="assect/Images/Gallery/gallery-13.jpg" alt="">
+                    <div class="gallery__content">
+                        <h4 class="gallery__title">Lightning Festival</h4>
+                        <div class="gallery__text"><p>Malanka in Bukovyna is an original theatrical carnival in which men and young people take part. Locals write original scenarios for the holiday, create their own costumes and masks. And already on January 14 this action can be seen on city streets.Thanks to it's unique, crazy atmosphere of fun, the festival attracts thousands of visitors from Bukovina and all over Ukraine. Malanka Festival is an ideal opportunity to spend your winter vacation fun, unforgettable in the style of ancient Ukrainian traditions.</p>
+                        <p>Address: Chernivtsi region</p></div>
+                    </div>
+                </div>
+                
+            
+        </div>
+        
+        <!--Reviews-->
+        <div class="reviews">
+            <div class="container">
+                <h3 class="reviews__title">Testimonials</h3>
+                <h4 class="reviews__subtitle">What our customers say about Ukraine</h4>
+                <div class="reviews__inner">
+                    
+                    <div class="reviews__item">
+                       <svg class="icone quotes">
+                          <use xlink:href="#quotes__icone"></use>
+                       </svg> 
+                       <div class="reviews__text">
+                          <p> If you are in Kiev and the weather is good - climb the Motherland! Stunning views from the shield is amazing! In Estonia there is a TV tower not far from Tallinn to climb but the view from Mother Motherland Statue with beautiful river, green trees and Kiev is really fantastic!</p>
+                       </div>
+                       <div class="reviews__autor">Heini with his sister, Keila, Estonia</div>
+                    </div>
+                    
+                    <div class="reviews__item">
+                       <svg class="icone quotes">
+                          <use xlink:href="#quotes__icone"></use>
+                       </svg> 
+                       <div class="reviews__text">
+                          <p>We really enjoyed our time in Ukraine and got only the very best impression of your beautiful country. I'm sure that we will return - and soon!</p>
+                       </div>
+                       <div class="reviews__autor">Mark and Lynda, Australia</div>
+                    </div>
+                    
+                    <div class="reviews__item">
+                       <svg class="icone quotes ">
+                          <use xlink:href="#quotes__icone"></use>
+                       </svg> 
+                       <div class="reviews__text">
+                          <p>Awesome, thank you for the everything! The hospitality is terrific!The tour of the Motherland monument was epic. Great communication and the time was without a doubt memorable! This tour should be a priority and a must to-do for anyone visiting Ukraine!!! Fabulous tour of your incredible country!!! Thank you again!</p>
+                       </div>
+                       <div class="reviews__autor">Robert, Stratford, Connecticut, USA</div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        
+        <!--Footer-->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__block">
+                    <h4 class="footer__title">About Travel in UA</h4>
+                   <div class="footer__text">
+                       <p>Travel in UA is a site about about tourism in Ukraine. On this site you will learn about the country about its unusual <br> places for residents and travelers. Travel to Ukraine, there is a lot of interesting things for everyone !!!</p>
+                    </div>
+                </div>
+            </div>
+                
+            <div class="copyright">
+                <div class="container">
+                    <div class="copyright__text">
+                        <div >Copyright © 2021 Travel in UA. All Rights Reserved.</div>
+                        <div>Designed by <span>Tetiana Roha</span></div>
+                    </div>
+                </div>
+            </div>
+            
+        </footer>
+        
+        
+        <!--JavaScript-->
+        <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+        <script type="text/javascript" src="assect/JS/app.js"></script>
+        
+    </body>
+</html>
